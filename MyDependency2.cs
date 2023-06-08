@@ -1,6 +1,6 @@
 ﻿namespace DependencyInjection1
 {
-    public class MyDependency2 : IMyDependency
+    public class MyDependency2 : IMyDependency2
     {
         private readonly ILogger<MyDependency2> _logger;
 
@@ -9,7 +9,7 @@
             _logger = logger;
         }
 
-        public void WriteMessage(string message)
+        public void WriteMessage2(string message)
         {
             _logger.LogInformation(  $"MyDependency2.WriteMessage Message: {message}");
         }
